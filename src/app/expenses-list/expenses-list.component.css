@@ -1,0 +1,21 @@
+#priceField {
+    width: 6%;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+#incomeField {
+    width: 10%;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+#itemField {
+    width: 15%;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+#clearButton {
+    margin-bottom: 1%;
+}

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+<div class="row">
+        <div>
+            <input type="number"
+            [(ngModel)]="income"
+            id="incomeField">
+            <button class="btn btn-primary"
+            (click)="onAddIncome(income)"
+            id="incomeAddButton">Add Income</button>
+            <div class="row"
+            style="margin-top: 1%">
+                <div class="col-xs-12">
+                <input type="text"
+                [(ngModel)]="item"
+                id="itemField">
+                <input type="number"
+                [(ngModel)]="price"
+                id="priceField">
+                <button class="btn btn-primary"
+                (click)="onAddExpense(item, price)"
+                id="addExpenseButton">Add Expense</button>
+                </div>
+            </div>
+        <div class="row"
+        style="margin-top: 1%">
+            <div class="col-xs-12">
+                <button class="btn btn-success"
+                (click)="onCalculate(income)"
+                id="calculateButton">Calculate</button>
+                <h4>{{ remainingAmount }}</h4>
+                <button class="btn btn-danger"
+                (click)="onClear()"
+                id="clearButton">Clear</button>
+            </div>
+        </div>         
+    </div>
+    <app-expense></app-expense> 
+</div>
+</div>
