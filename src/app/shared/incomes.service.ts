@@ -4,19 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class IncomesService {
-  income: number[] = [];
-  incomeAmount = 0;
+  income = 0;
 
   constructor() { }
 
   onAddIncomeToIncome(income: number) {
-    this.income.push(income);
-
-    for (const i of this.income) {
-      if (this.income.length !== 0 && i === i) {  // income keeps doubling
-        this.incomeAmount += i;
-      }
+    this.income += income;
+    console.log(this.income);
     }
-    console.log(this.incomeAmount);
+
+    clearIncome() {
+      this.income = 0;
+    }
   }
-}

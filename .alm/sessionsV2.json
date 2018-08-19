@@ -1,0 +1,39 @@
+{
+  "sessions": [
+    {
+      "id": "293cbfad-1a8f-433a-a34d-dbadb8d9ee55",
+      "tabLayout": {
+        "type": "stack",
+        "width": 100,
+        "height": 100,
+        "tabs": [
+          {
+            "id": "d994f591-ca13-412c-92d3-1d46b0527d91",
+            "relativeUrl": "file://./src/app/expenses-list/expenses-list.component.ts",
+            "additionalData": null
+          },
+          {
+            "id": "49462d99-8e6a-4d5c-bebe-695c02952eec",
+            "relativeUrl": "file://./src/app/shared/expenses.service.ts",
+            "additionalData": null
+          },
+          {
+            "id": "3f39fb22-493d-4ed3-9107-2337f5411c36",
+            "relativeUrl": "file://./src/app/shared/incomes.service.ts",
+            "additionalData": null
+          },
+          {
+            "id": "076e2596-7563-4fab-9a75-22e7ecf1e9df",
+            "relativeUrl": "file://./src/app/expenses-list/expenses-list.component.ts",
+            "additionalData": null
+          }
+        ],
+        "subItems": [],
+        "activeItemIndex": 0
+      },
+      "lastUsed": 1534630518541,
+      "selectedTabId": "076e2596-7563-4fab-9a75-22e7ecf1e9df"
+    }
+  ],
+  "relativePathToTsconfig": "./tsconfig.json"
+}

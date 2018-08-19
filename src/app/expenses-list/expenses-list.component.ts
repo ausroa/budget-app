@@ -18,7 +18,6 @@ export class ExpensesListComponent implements OnInit {
   item: string;
   price: number;
   incomeClear: number;
-  @ViewChild('inputField') inputs: ElementRef;
 
   constructor(private expenseService: ExpensesService,
               private incomeService: IncomesService) { }
@@ -41,7 +40,7 @@ export class ExpensesListComponent implements OnInit {
   }
 
   onCalculate(income: number) {
-    for (const i of this.expenses) {
+    for (const i of this.expenses) { // TODO allow user to calculate when more expenses are added
       this.sumPrices += i.price;
     }
     this.remainingAmount = income - this.sumPrices;
@@ -49,6 +48,10 @@ export class ExpensesListComponent implements OnInit {
 
   onClear() {
     this.expenses.length = 0;
-    this.expense = null;
+    this.incomeService.clearIncome();
+    this.sumPrices = 0;
+    this.income = null;
+    this.remainingAmount = null;
+    console.log(this.income);
   }
 }
